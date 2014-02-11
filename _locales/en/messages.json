@@ -1,0 +1,247 @@
+{
+	"app_description": {
+		"message": "Collects browsing data to analyze your habbits and filter bad content"
+	},
+
+	"options": {
+		"message": "Options"
+	},
+
+	// ACTIONS PAGE
+
+	"action_title": {
+		"message": "SurfAlyze Status"
+	},
+
+	"status_off": {
+		"message": "Off"
+	},
+
+	"status_learning": {
+		"message": "Learning"
+	},
+
+	"status_warning": {
+		"message": "Warning"
+	},
+
+	"status_armed": {
+		"message": "Armed"
+	},
+
+	"action_status": {
+		"message": "Mode"
+	},
+
+	"action_unknowncontents": {
+		"message": "Unknown Contents"
+	},
+
+	"action_blockedcontents": {
+		"message": "Blocked Contents"
+	},
+
+	// BLOCKED PAGE
+
+	"pageblocked_header": {
+		"message": "Access Blocked"
+	},
+
+	"pageblocked_content": {
+		"message": "Access to this page has been blocked."
+	},
+
+	"pageblocked_prefix": {
+		"message": "Access to the address"
+	},
+
+	"pageblocked_suffix": {
+		"message": "has been blocked because it was not previously recorded."
+	},
+
+	// OPTIONS PAGE
+
+	"options_header": {
+		"message": "Options"
+	},
+
+	"options_engine": {
+		"message": "Engine"
+	},
+
+	"option_mode_disabled": {
+		"message": "Off"
+	},
+
+	"option_mode_learning": {
+		"message": "Learning"
+	},
+
+	"option_mode_warning": {
+		"message": "Warning"
+	},
+
+	"option_mode_armed": {
+		"message": "Armed"
+	},
+
+	"option_mode_help": {
+		"message": "<h1>Operation Mode of SurfAlyze</h1><p><em>Learning</em> mode: SurfAlyze will record your surfing habbits. It won't block any pages it doesn't know though.</p><p><em>Warning</em>: SurfAlyze will still record pages you visit, but it will issue a warning for unknown pages.</p><p><em>Armed</em>: You will only be able to open pages SurfAlyze has recorded before."
+	},
+
+	"option_toolbar": {
+		"message": "Show toolbar"
+	},
+
+	"option_blockmainframes": {
+		"message": "Block Pages"
+	},
+
+	"option_blockmainframes_help": {
+		"message": "<h1>Block Pages</h1><p>Blocks loading of entire pages if they're unknown.<br><br>Only relevant for <em>Armed Mode</em>.</p>"
+	},
+
+	"option_sbakey": {
+		"message": "Safe Browsing API Key"
+	},
+
+	"option_sbakey_help": {
+		"message": "<h1>Safe Browsing API Key</h1><p>Personal API Key to the Google Safe Browsing API.<br><br>You can register your own key here: <a href=\"https://developers.google.com/safe-browsing/key_signup\" target=\"_blank\">https://developers.google.com/safe-browsing/key_signup</a><br><br><br><small>(Advisory provided by Google, see: https://developers.google.com/safe-browsing/safebrowsing_faq)</small></p>"
+	},
+
+	"option_advanced_off": {
+		"message": "Settings disabled"
+	},
+
+	"option_advanced_on": {
+		"message": "Settings enabled"
+	},
+
+	"option_advanced_help": {
+		"message": "<h1>Advanced Content Settings</h1>If <em>enabled</em>, you will be able to select advanced content tracking options for SurfAlyze."
+	},
+
+	"options_requests": {
+		"message": "Request Types"
+	},
+
+	"option_request_iframes": {
+		"message": "IFrames"
+	},
+
+	"option_request_iframes_help": {
+		"message": "<h1>IFrames</h1><p>If disabled, all types of <em>frames</em> will not be tracked.</p>"
+	},
+
+	"option_request_images": {
+		"message": "Images"
+	},
+
+	"option_request_images_help": {
+		"message": "<h1>Images</h1><p>If disabled, <em>images</em> will not be tracked.</p>"
+	},
+
+	"option_request_scripts": {
+		"message": "Scripts"
+	},
+
+	"option_request_scripts_help": {
+		"message": "<h1>Scripts</h1><p>If disabled, <em>script files</em> will not be tracked.</p>"
+	},
+
+	"option_request_objects": {
+		"message": "Objects"
+	},
+
+	"option_request_objects_help": {
+		"message": "<h1>Objects</h1><p>If disabled, <em>objects</em> will not be tracked.</p>"
+	},
+
+	"option_request_ajax": {
+		"message": "AJAX"
+	},
+
+	"option_request_ajax_help": {
+		"message": "<h1>AJAX</h1><p>If disabled, <em>AJAX</em>-requests (XHR, XMLHttpRequest) will not be tracked.</p>"
+	},
+
+	"option_request_other": {
+		"message": "Other Requests"
+	},
+
+	"option_request_other_help": {
+		"message": "<h1>Other</h1><p>If disabled, requests to resources <em>not</em> within <em>one of the above</em> categories will be tracked.</p>"
+	},
+
+	"infobar_unknown_title" : {
+		"message": "Content on this page is unknown"
+	},
+
+	"infobar_blocked_title" : {
+		"message": "Content on this page has been blocked"
+	},
+
+	"th_domain": {
+		"message": "Domain"
+	},
+
+	"th_type": {
+		"message": "Type"
+	},
+
+	"th_time": {
+		"message": "Time"
+	},
+
+	"th_url": {
+		"message": "URL"
+	},
+
+	"th_discovery": {
+		"message": "Added"
+	},
+
+	"th_contents": {
+		"message": "Contents"
+	},
+
+	"th_sblookup": {
+		"message": "Checked"
+	},
+
+	"th_blocked": {
+		"message": "Blocked"
+	},
+
+	"button_hide": {
+		"message": "Hide"
+	},
+
+	"button_showtoolbar": {
+		"message": "Show Toolbar"
+	},
+
+	"tab_options": {
+		"message": "Options"
+	},
+
+	"tab_records": {
+		"message": "Records"
+	},
+
+	"tab_whitelist": {
+		"message": "Whitelist"
+	},
+
+	"whitelistinfo": {
+		"message": "Entries in the whitelist are used as part of a regulary expression to match subdomains and possible TLDs.<br>(e.g. /(^\\S+\\.|^)ajax.googleapis\\.\\w+$/i)"
+	},
+
+	"boolean_true": {
+		"message": "Yes"
+	},
+
+	"boolean_false": {
+		"message": "No"
+	}
+}

@@ -1,0 +1,36 @@
+/**
+ * Copyright © 2014 Alexander Hofbauer <alex@derhofbauer.at>
+ *
+ * This file is part of SurfAlyze.
+ *
+ * SurfAlyze is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * You should have received a copy of the GNU General Public License
+ * along with this extension in the root folder called "LICENSE".
+ * If not, see <http://www.gnu.org/licenses/>.
+ */
+@charset "UTF-8";
+
+@import 'font-awesome.min.css';
+@import 'main.css';
+
+
+h1.title {
+	margin-bottom: 0.5em;
+}
+
+#contents {
+	margin: 0 0 1em 0;
+	height: 10.6em;
+	overflow: auto;
+}
+
+#contentstable {
+	width: 98%;
+}
+
+#buttonhide {
+	float: right;
+}

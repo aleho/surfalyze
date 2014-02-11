@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<!--
+ * Copyright © 2014 Alexander Hofbauer <alex@derhofbauer.at>
+ *
+ * This file is part of SurfAlyze.
+ *
+ * SurfAlyze is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * You should have received a copy of the GNU General Public License
+ * along with this extension in the root folder called "LICENSE".
+ * If not, see <http://www.gnu.org/licenses/>.
+-->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>SurfAlyze</title>
+
+	<link rel="stylesheet" type="text/css" href="/css/options.css">
+
+	<script type="text/javascript" src="/js/libs/Utils.js"></script>
+	<script type="text/javascript" src="/js/libs/Log.js"></script>
+	<script type="text/javascript" src="/js/surfalyze/ChromeStorage.js"></script>
+	<script type="text/javascript" src="/js/surfalyze/SurfAlyze.js"></script>
+	<script type="text/javascript" src="/js/surfalyze/Messaging.js"></script>
+	<script type="text/javascript" src="/js/surfalyze/SQLiteDb.js"></script>
+	<script type="text/javascript" src="/js/surfalyze/Storage.js"></script>
+
+	<script type="text/javascript" src="/js/libs/zepto.min.js"></script>
+	<script type="text/javascript" src="/js/widgets/Help.js"></script>
+	<script type="text/javascript" src="/js/widgets/I18n.js"></script>
+	<script type="text/javascript" src="/js/widgets/ContentBox.js"></script>
+	<script type="text/javascript" src="/js/widgets/ContentTabs.js"></script>
+	<script type="text/javascript" src="/js/options.js"></script>
+</head>
+
+<body class="container">
+
+<h1 id="title"><span class="headercontent">SurfAlyze – <span data-i18n="options_header">Options</span></span></h1>
+
+<div id="tabs">
+	<h2 id="tab-options" class="tab active" data-i18n="tab_options">settings</h2>
+	<h2 id="tab-records" class="tab" data-i18n="tab_records">records</h2>
+	<h2 id="tab-whitelist" class="tab" data-i18n="tab_whitelist">whitelist</h2>
+</div>
+
+<div id="tabs-contents">
+<div id="tab-options-content" class="tab-content">
+	<div id="engine-options" class="container form" style="margin-right: 2em;">
+		<h3 id="title-engine"><span data-i18n="options_engine" class="headercontent">Engine</span></h3>
+
+		<div class="row select">
+			<select id="mode">
+				<option value="off" data-i18n="option_mode_disabled">Off</option>
+				<option value="learning" data-i18n="option_mode_learning">Learning</option>
+				<option value="warning" data-i18n="option_mode_warning">Warning</option>
+				<option value="armed" data-i18n="option_mode_armed">Armed</option>
+			</select>
+			<div class="help" data-i18n="option_mode_help"></div>
+		</div>
+
+		<div class="row spacer"></div>
+
+		<div class="row select">
+			<select id="advanced" disabled="disabled">
+				<option value="off" data-i18n="option_advanced_off">Off</option>
+				<option value="on" data-i18n="option_advanced_on">On</option>
+			</select>
+			<div class="help" data-i18n="option_advanced_help"></div>
+		</div>
+
+		<div class="row spacer"></div>
+
+		<div id="main-options" class="container form disabled">
+			<div class="row checkbox" id="showtoolbar">
+				<label for="option-toolbar">
+					<input type="checkbox" id="option-toolbar" checked="checked" />
+					<span data-i18n="option_toolbar">toolbar</span>
+				</label>
+			</div>
+
+			<div class="row checkbox" id="block">
+				<label for="option-blockmainframes">
+					<input type="checkbox" id="option-blockmainframes" checked="checked" />
+					<span data-i18n="option_blockmainframes">blockunknownurls</span>
+				</label>
+				<div class="help" data-i18n="option_blockmainframes_help">block mainframes</div>
+			</div>
+
+			<div class="row input" id="sbakey">
+				<label for="option-sbakey" data-i18n="option_sbakey"></label>
+				<input type="text" id="option-sbakey" value="" style="width: 12em;" />
+				<div class="help" data-i18n="option_sbakey_help">sbakey</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="requests-options" class="container form disabled">
+		<h3 id="title-requests"><span data-i18n="options_requests" class="headercontent">Requests</span></h3>
+
+		<div class="row checkbox">
+			<label for="option-request-iframes">
+				<input type="checkbox" id="option-request-iframes" checked="checked" />
+				<span data-i18n="option_request_iframes">iframes</span>
+			</label>
+			<div class="help" data-i18n="option_request_iframes_help"></div>
+		</div>
+
+		<div class="row checkbox">
+			<label for="option-request-images">
+				<input type="checkbox" id="option-request-images" />
+				<span data-i18n="option_request_images">images</span>
+			</label>
+			<div class="help" data-i18n="option_request_images_help"></div>
+		</div>
+
+		<div class="row checkbox">
+			<label for="option-request-scripts">
+				<input type="checkbox" id="option-request-scripts" checked="checked" />
+				<span data-i18n="option_request_scripts">scripts</span>
+			</label>
+			<div class="help" data-i18n="option_request_scripts_help"></div>
+		</div>
+
+		<div class="row checkbox">
+			<label for="option-request-objects">
+				<input type="checkbox" id="option-request-objects" checked="checked" />
+				<span data-i18n="option_request_objects">objects</span>
+			</label>
+			<div class="help" data-i18n="option_request_objects_help"></div>
+		</div>
+
+		<div class="row checkbox">
+			<label for="option-request-ajax">
+				<input type="checkbox" id="option-request-ajax" checked="checked" />
+				<span data-i18n="option_request_ajax">ajax</span>
+			</label>
+			<div class="help" data-i18n="option_request_ajax_help"></div>
+		</div>
+
+		<div class="row checkbox">
+			<label for="option-request-other">
+				<input type="checkbox" id="option-request-other" checked="checked" />
+				<span data-i18n="option_request_other">other</span>
+			</label>
+			<div class="help" data-i18n="option_request_other_help"></div>
+		</div>
+	</div>
+</div>
+
+
+<div id="tab-records-content" class="tab-content hidden">
+	<table id="recordstable" style="width: 100%;">
+		<thead><tr>
+			<th data-i18n="th_domain"    class="bb">domain</th>
+			<th data-i18n="th_discovery" class="bb">discovery</th>
+			<th data-i18n="th_sblookup"  class="bb">lookup</th>
+			<th data-i18n="th_blocked"   class="bb">blocked</th>
+			<th data-i18n="th_contents"  class="bb">contents</th>
+		</tr></thead>
+		<tbody id="recordslist"></tbody>
+	</table>
+
+	<table id="contentstable" style="width: 100%;">
+		<thead><tr>
+			<th data-i18n="th_domain"    class="bb">domain</th>
+			<th data-i18n="th_type"      class="bb">type</th>
+			<th data-i18n="th_discovery" class="bb">discovery</th>
+			<th data-i18n="th_sblookup"  class="bb">lookup</th>
+			<th data-i18n="th_blocked"   class="bb">blocked</th>
+		</tr></thead>
+		<tbody id="contentslist"></tbody>
+	</table>
+</div>
+
+
+<div id="tab-whitelist-content" class="tab-content hidden">
+	<p data-i18n="whitelistinfo" style="width: 25em; margin: 0 0 2em 0; font-size: 95%; line-height: 1.3em;">whitelistinfo</p>
+	<table id="whitelisttable" style="width: 100%;">
+		<thead><tr>
+			<th data-i18n="th_url" class="bb">domain</th>
+		</tr></thead>
+		<tbody id="whitelist"></tbody>
+	</table>
+</div>
+
+</div>
+
+
+<div id="versioninfo">
+	<div>SurfAlyze v<span id="versioninfo-version"></span></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+{
+	"manifest_version": 2,
+
+	"name": "SurfAlyze",
+	"description": "__MSG_app_description__",
+	"version": "0.0.1",
+	"default_locale": "en",
+
+	"homepage_url": "http://www.surfalyze.com",
+	"update_url": "http://www.surfalyze.com/extension/updates.xml",
+
+	"content_security_policy": "script-src 'self' chrome-extension://; style-src 'self' chrome://resources data: chrome-extension-resource: 'unsafe-inline'; object-src 'self';",
+
+	"permissions": [
+		"<all_urls>",
+		"contentSettings",
+		"management",
+		"storage",
+		"tabs",
+		"unlimitedStorage",
+		"webRequest",
+		"webRequestBlocking"
+	],
+
+	"icons": {
+		"16":  "res/icons/surfalyze-16.png",
+		"48":  "res/icons/surfalyze-48.png",
+		"128": "res/icons/surfalyze-128.png"
+	},
+
+	"background": {
+		"persistent": true,
+		"page": "pages/background.html"
+	},
+
+	"options_page": "pages/options.html",
+
+	"browser_action": {
+		"default_icon": {
+			"19": "res/icons/surfalyze-19.png",
+			"38": "res/icons/surfalyze-38.png"
+		},
+		"default_title": "__MSG_action_title__",
+		"default_popup": "pages/action.html"
+	},
+
+	"web_accessible_resources": [
+		"css/chrome_widgets.css",
+		"css/chrome_shared.css",
+		"css/font-awesome.min.css",
+		"css/main.css",
+		"fonts/fontawesome-webfont.woff",
+		"js/libs/Log.js",
+		"js/libs/zepto.min.js",
+		"js/widgets/I18n.js",
+		"pages/blocked.html",
+		"pages/blocked-frame.html",
+		"pages/infobar.html"
+	],
+
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": [
+				"js/libs/zepto.min.js",
+				"js/libs/Utils.js",
+				"js/libs/Log.js",
+				"js/surfalyze/Messaging.js",
+				"js/widgets/Infoframe.js",
+				"js/content.js"
+			],
+			"run_at": "document_start"
+		}
+	],
+
+	"externally_connectable": {
+		"ids": []
+	}
+}

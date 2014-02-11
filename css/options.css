@@ -1,0 +1,51 @@
+/**
+ * Copyright © 2014 Alexander Hofbauer <alex@derhofbauer.at>
+ *
+ * This file is part of SurfAlyze.
+ *
+ * SurfAlyze is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * You should have received a copy of the GNU General Public License
+ * along with this extension in the root folder called "LICENSE".
+ * If not, see <http://www.gnu.org/licenses/>.
+ */
+@charset "UTF-8";
+
+@import 'font-awesome.min.css';
+@import 'main.css';
+
+
+body {
+	background-color: #F1F1F1;
+}
+
+h3#title-engine {
+	background: url('/res/icons/engine-48.png') no-repeat left top;
+	padding-left: 52px;
+}
+
+#versioninfo {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	background-color: #E0E0E0;
+	color: #555555;
+	font-size: 0.9em;
+	letter-spacing: 0.04em;
+	box-shadow: 0 3px 6px -3px rgba(0, 0, 0, 0.3) inset;
+	-webkit-user-select: none;
+}
+
+#versioninfo > div {
+	text-align: center;
+	padding: 0.5em 0 0.4em 0;
+}
+
+#contentstable {
+	display: none;
+	margin-top: 3em;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+ * Copyright © 2014 Alexander Hofbauer <alex@derhofbauer.at>
+ *
+ * This file is part of SurfAlyze.
+ *
+ * SurfAlyze is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * You should have received a copy of the GNU General Public License
+ * along with this extension in the root folder called "LICENSE".
+ * If not, see <http://www.gnu.org/licenses/>.
+-->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>SurfAlyze</title>
+
+	<link rel="stylesheet" type="text/css" href="/css/action.css">
+
+	<script type="text/javascript" src="/js/libs/Utils.js"></script>
+	<script type="text/javascript" src="/js/libs/Log.js"></script>
+	<script type="text/javascript" src="/js/surfalyze/Messaging.js"></script>
+	
+	<script type="text/javascript" src="/js/libs/zepto.min.js"></script>
+	<script type="text/javascript" src="/js/widgets/I18n.js"></script>
+	<script type="text/javascript" src="/js/action.js"></script>
+</head>
+
+<body class="container small">
+	<h1 id="title"><span class="headercontent">SurfAlyze</span></h1>
+	
+	<div id="content">
+		<b><span data-i18n="action_status">status</span>:</b>&nbsp;<span id="status"></span><br>
+		
+		<p id="contentsinfo">
+			<span id="unknown"><b><span data-i18n="action_unknowncontents">unknown</span>:</b>&nbsp;<span class="contentscount"></span></span>
+			<span id="blocked"><b><span data-i18n="action_blockedcontents">blocked</span>:</b>&nbsp;<span class="contentscount"></span></span>
+			<br>
+			<br>
+			<button data-i18n="button_showtoolbar" id="showtoolbar" value="showtoolbar"></button>
+		</p>
+		
+		<br>
+		<br>
+		<a id="options" target="_blank"><span data-i18n="options">Options</span>…</a>
+	</div>
+</body>
+</html>

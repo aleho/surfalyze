@@ -1,0 +1,63 @@
+/**
+ * Copyright © 2014 Alexander Hofbauer <alex@derhofbauer.at>
+ *
+ * This file is part of SurfAlyze.
+ *
+ * SurfAlyze is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * You should have received a copy of the GNU General Public License
+ * along with this extension in the root folder called "LICENSE".
+ * If not, see <http://www.gnu.org/licenses/>.
+ */
+@charset "UTF-8";
+
+table {
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 0.25em 0.4em;
+}
+
+th {
+	color: #3E679E;
+	text-align: left;
+}
+
+tbody tr:nth-of-type(odd) {
+	background-color: #F3F3F3;
+}
+
+.bt, .br, .bb, .bl {
+	border-color: #CDCDCD;
+}
+
+.bt {
+	border-top-width: 1px;
+	border-top-style: solid;
+}
+
+.br {
+	border-right-width: 1px;
+	border-right-style: solid;
+}
+
+.bb {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+.bl {
+	border-left-width: 1px;
+	border-left-style: solid;
+}
+
+td.center, th.center {
+	text-align: center;
+}
+
+td.right, th.right {
+	text-align: right;
+}

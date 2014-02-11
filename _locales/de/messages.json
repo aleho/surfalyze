@@ -1,0 +1,247 @@
+{
+	"app_description": {
+		"message": "Zeichnet Ihre Surf-Gewohnheiten auf um diese zu analysieren und schädliche Inhalte zu blockieren."
+	},
+
+	"options": {
+		"message": "Optionen"
+	},
+
+	// ACTIONS PAGE
+
+	"action_title": {
+		"message": "SurfAlyze Status"
+	},
+
+	"status_off": {
+		"message": "Aus"
+	},
+
+	"status_learning": {
+		"message": "Lernmodus"
+	},
+
+	"status_warning": {
+		"message": "Warnungen"
+	},
+
+	"status_armed": {
+		"message": "Scharf"
+	},
+
+	"action_status": {
+		"message": "Modus"
+	},
+
+	"action_unknowncontents": {
+		"message": "Unbekannte Inhalte"
+	},
+
+	"action_blockedcontents": {
+		"message": "Blockierte Inhalte"
+	},
+
+	// BLOCKED PAGE
+
+	"pageblocked_header": {
+		"message": "Zugriff Blockiert"
+	},
+
+	"pageblocked_content": {
+		"message": "Das Laden dieser Seite wurde blockiert."
+	},
+
+	"pageblocked_prefix": {
+		"message": "Das Laden der Adresse"
+	},
+
+	"pageblocked_suffix": {
+		"message": "ist blockiert, da sie zuvor nicht aufgezeichnet wurde."
+	},
+
+	// OPTIONS PAGE
+
+	"options_header": {
+		"message": "Optionen"
+	},
+
+	"options_engine": {
+		"message": "Engine"
+	},
+
+	"option_mode_disabled": {
+		"message": "Aus"
+	},
+
+	"option_mode_learning": {
+		"message": "Lernmodus"
+	},
+
+	"option_mode_warning": {
+		"message": "Warnungen"
+	},
+
+	"option_mode_armed": {
+		"message": "Scharf"
+	},
+
+	"option_mode_help": {
+		"message": "<h1>Betriebsmodus von SurfAlyze</h1><p><em>Lernmodus</em>: SurfAlyze wird Ihre Gewohnheiten aufzeichnen. Unbekannte Seiten werden nicht blockiert.</p><p><em>Warnungen</em>: Besuchte Seiten werden weiterhin aufgezeichnet, für unbekannte Seiten jedoch eine Warnung ausgegeben.</p><p><em>Scharf</em>: Sie können nur Inhalte von Seiten sehen, die SurfAlyze bereits aufgezeichnet hat. Zugang zu unbekannten Seiten müssen Sie explizit aktivieren."
+	},
+
+	"option_toolbar": {
+		"message": "Zeige Statusleiste"
+	},
+
+	"option_blockmainframes": {
+		"message": "Blockiere Seiten"
+	},
+
+	"option_blockmainframes_help": {
+		"message": "<h1>Blockiere Seiten</h1><p>Ganze Seiten werden blockiert, wenn diese unbekannt sind.<br><br>Nur relevant im <em>Modus scharf</em>.</p>"
+	},
+
+	"option_sbakey": {
+		"message": "Safe Browsing API Key"
+	},
+
+	"option_sbakey_help": {
+		"message": "<h1>Safe Browsing API Key</h1><p>Persönlicher API Schlüssel zur Benutzung der Google Safe Browsing API.<br><br>Einen Schlüssel erhalten Sie unter: <a href=\"https://developers.google.com/safe-browsing/key_signup\" target=\"_blank\">https://developers.google.com/safe-browsing/key_signup</a><br><br><br><small>(Daten zur Verfügung gestellt durch Google, siehe: https://developers.google.com/safe-browsing/safebrowsing_faq)</small></p>"
+	},
+
+	"option_advanced_off": {
+		"message": "Einstellungen aus"
+	},
+
+	"option_advanced_on": {
+		"message": "Einstellungen an"
+	},
+
+	"option_advanced_help": {
+		"message": "<h1>Erweiterte Einstellungen</h1>Wenn <em>aktiviert</em> können Sie individuelle Filtereinstellungen für SurfAlyze vornehmen. Deaktivierte Elemente werden nicht aufgezeichnet."
+	},
+
+	"options_requests": {
+		"message": "Anfrage-Typen"
+	},
+
+	"option_request_iframes": {
+		"message": "IFrames"
+	},
+
+	"option_request_iframes_help": {
+		"message": "<h1>IFrames</h1><p>Wenn deaktiviert, werden <em>Frames</em> nicht aufgezeichnet.</p>"
+	},
+
+	"option_request_images": {
+		"message": "Bilder"
+	},
+
+	"option_request_images_help": {
+		"message": "<h1>Bilder</h1><p>Wenn deaktiviert, werden <em>Bilder</em> nicht aufgezeichnet.</p>"
+	},
+
+	"option_request_scripts": {
+		"message": "Skripte"
+	},
+
+	"option_request_scripts_help": {
+		"message": "<h1>Scripts</h1><p>Wenn deaktiviert, werden <em>Script-Dateien</em> nicht aufgezeichnet.</p>"
+	},
+
+	"option_request_objects": {
+		"message": "Objekte"
+	},
+
+	"option_request_objects_help": {
+		"message": "<h1>Objects</h1><p>Wenn deaktiviert, werdem <em>Objekte</em> nicht aufgezeichnet.</p>"
+	},
+
+	"option_request_ajax": {
+		"message": "AJAX"
+	},
+
+	"option_request_ajax_help": {
+		"message": "<h1>AJAX</h1><p>Wenn deaktiviert, werden <em>AJAX</em>-requests (XHR, XMLHttpRequest) Anfragen nicht aufgezeichnet.</p>"
+	},
+
+	"option_request_other": {
+		"message": "Andere Anfragen"
+	},
+
+	"option_request_other_help": {
+		"message": "<h1>Other</h1><p>Wenn deaktiviert, werden Anfragen zu allen Ressources die <em>nicht oben angeführt</em> sind, aufgezeichnet.</p>"
+	},
+
+	"infobar_unknown_title" : {
+		"message": "Inhalte auf dieser Seite sind unbekannt"
+	},
+
+	"infobar_blocked_title" : {
+		"message": "Inhalte auf dieser Seite wurden blockiert"
+	},
+
+	"th_domain": {
+		"message": "Domain"
+	},
+
+	"th_type": {
+		"message": "Typ"
+	},
+
+	"th_time": {
+		"message": "Zeit"
+	},
+
+	"th_url": {
+		"message": "Addresse"
+	},
+
+	"th_discovery": {
+		"message": "Hinzugefügt"
+	},
+
+	"th_contents": {
+		"message": "Inhalte"
+	},
+
+	"th_sblookup": {
+		"message": "Überprüft"
+	},
+
+	"th_blocked": {
+		"message": "Gesperrt"
+	},
+
+	"button_hide": {
+		"message": "Verbergen"
+	},
+
+	"button_showtoolbar": {
+		"message": "Zeige Statusleiste"
+	},
+
+	"tab_options": {
+		"message": "Konfiguration"
+	},
+
+	"tab_records": {
+		"message": "Aufzeichnungen"
+	},
+
+	"tab_whitelist": {
+		"message": "Positivliste"
+	},
+
+	"whitelistinfo": {
+		"message": "Einträge in der Positivliste werden als Teil eines regulären Ausdrucks verwendet, um Subdomains und mögliche TLDs einzuschließen.<br>(e.g. /(^\\S+\\.|^)ajax.googleapis\\.\\w+$/i)"
+	},
+
+	"boolean_true": {
+		"message": "Ja"
+	},
+
+	"boolean_false": {
+		"message": "Nein"
+	}
+}

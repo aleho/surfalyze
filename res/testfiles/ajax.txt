@@ -1,0 +1,1 @@
+<b>XMLHttpRequest enabled</b>

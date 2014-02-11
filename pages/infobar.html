@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+ * Copyright © 2014 Alexander Hofbauer <alex@derhofbauer.at>
+ *
+ * This file is part of SurfAlyze.
+ *
+ * SurfAlyze is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * You should have received a copy of the GNU General Public License
+ * along with this extension in the root folder called "LICENSE".
+ * If not, see <http://www.gnu.org/licenses/>.
+-->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>SurfAlyze</title>
+
+	<link rel="stylesheet" type="text/css" href="/css/infobar.css">
+
+	<script type="text/javascript" src="/js/libs/Utils.js"></script>
+	<script type="text/javascript" src="/js/libs/Log.js"></script>
+	<script type="text/javascript" src="/js/surfalyze/Messaging.js"></script>
+
+	<script type="text/javascript" src="/js/libs/zepto.min.js"></script>
+	<script type="text/javascript" src="/js/widgets/I18n.js"></script>
+	<script type="text/javascript" src="/js/infobar.js"></script>
+</head>
+
+<body class="container">
+	<div id="unknowntitle">
+		<h1 class="title"><span class="headercontent">SurfAlyze – <span data-i18n="infobar_unknown_title">content unknown info</span></span></h1>
+	</div>
+	<div id="blockedtitle">
+		<h1 class="title"><span class="headercontent">SurfAlyze – <span data-i18n="infobar_blocked_title">content blocked info</span></span></h1>
+	</div>
+
+	<div id="contents">
+	<table id="contentstable">
+		<thead><tr>
+			<th data-i18n="th_domain" class="bb">domain</th>
+			<th data-i18n="th_type"   class="bb">type</th>
+			<th data-i18n="th_time"   class="bb">date</th>
+			<th data-i18n="th_url"    class="bb">url</th>
+		</tr></thead>
+		<tbody id="contentslist"></tbody>
+	</table>
+	</div>
+
+	<button id="buttonhide"><i class="fa fa-check"></i><span data-i18n="button_hide">hide</span></button>
+
+</body>
+</html>

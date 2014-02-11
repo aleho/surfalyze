@@ -1,0 +1,121 @@
+/**
+ * Copyright © 2014 Alexander Hofbauer <alex@derhofbauer.at>
+ *
+ * This file is part of SurfAlyze.
+ *
+ * SurfAlyze is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * You should have received a copy of the GNU General Public License
+ * along with this extension in the root folder called "LICENSE".
+ * If not, see <http://www.gnu.org/licenses/>.
+ */
+@charset "UTF-8";
+
+div.container {
+	-webkit-user-select: none;
+	float: left;
+}
+
+div.container.form > div.row {
+	display: table-row;
+}
+
+div.container.form > div.container {
+	clear: both;
+	padding: 0;
+}
+
+div.row.spacer {
+	height: 2em;
+}
+
+div.row > label,
+div.row > select,
+div.row > input,
+div.row > div.help {
+	display: table-cell;
+}
+
+div.row > label {
+	padding: 0.7em 0.5em 0.7em 0;
+}
+
+div.input > label {
+	margin-top: 2em;
+	display: block;
+	padding: 0;
+}
+
+div.checkbox > label {
+	padding: 0.2em 0;
+}
+
+div.checkbox > label > span {
+	display: inline;
+}
+
+
+div.row > div.help {
+	padding: 0 0 0 1em;
+}
+
+div.select select {
+	width: 10em;
+}
+
+
+button .fa {
+	margin-right: 0.3em;
+}
+
+
+div.help .fa {
+	color: #AAAACC;
+	cursor: pointer;
+	font-size: 24px;
+	line-height: 18px;
+	visibility: hidden;
+}
+
+div.help .fa:hover {
+	color: #303942;
+}
+
+div.help > div {
+	display: none;
+	position: absolute;
+	z-index: 2;
+	border: 1px solid #EAEAEA;
+	border-radius: 5px;
+	min-width: 18em;
+	max-width: 25em;
+	box-shadow: 0 1px 8px -2px #888888;
+	line-height: 1.5em;
+	background-color: white;
+	padding: 0 0.5em 0.5em 0.5em;
+	margin: 0 1em 1em 1em;
+	overflow: hidden;
+}
+
+div.help > div > h1 {
+	font-weight: bold;
+	font-size: 1em;
+}
+
+div.help > div > p {
+	margin: 1.5em 0 0 0;
+}
+
+div.help > div em {
+	font-size: 0.92em;
+	font-style: normal;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.disabled {
+	opacity: 0.3;
+	pointer-events: none;
+}
